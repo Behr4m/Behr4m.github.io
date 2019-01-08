@@ -1,0 +1,64 @@
+.menu a {      /*ссылки меню*/
+    color:red;
+    font-style: italic;
+    text-decoration:underline;
+    list-style-type: none;
+    font-size: 12px;
+}
+body {
+    background-color: papayawhip;
+}
+.descriptionh { /*заголовки на страницах товаров*/
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+.shortdesc{/*стили для текста краткого описания*/
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.fulldesc {/*стили для текста полного описания*/
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.characteristics {/*стили для списка характеристик*/
+    color: darkred;
+    font-style: inherit;
+    text-decoration: underline;
+    list-style-image:url("images/123-94.jpg");
+}
+input { /*текстовые поля*/
+    border: solid black 3px;
+    font-size: 10px;
+    height: 20px;
+    width: 300px;
+    color: red;
+    background-color: antiquewhite;
+}
+
+textarea {/*поле для обращения*/
+    border: solid black 3px;
+    font-size: 10px;
+    height: 100px;
+    width: 298px;
+    color: red;
+    background-color: antiquewhite;
+}
+.switches { /*рамка картинок на страницах товаров*/
+    height: 400px;
+    width: 400px;
+    outline: solid blue;
+}
+.button {/*кнопки*/
+    color: blue;
+    background-color: antiquewhite;
+    height: 30px;
+    width: 149px;
+    border:solid black 0.2px;
+}
