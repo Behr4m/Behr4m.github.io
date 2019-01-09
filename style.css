@@ -33,15 +33,30 @@ body {
     text-decoration: underline;
     list-style-image:url("images/123-94.jpg");
 }
-input { /*текстовые поля*/
+input[type="text"]{ /*текстовые поля*/
     border: solid black 3px;
     font-size: 10px;
     height: 20px;
     width: 300px;
     color: red;
     background-color: antiquewhite;
+    text-transform: capitalize;
 }
-
+input[type="email"] /*поле email*/{
+    border: solid black 3px;
+    font-size: 10px;
+    color: red;
+    height: 20px;
+    width: 300px;
+    background-color: antiquewhite;
+}
+input[type="email"]:focus { /*поле email  при вводе*/
+    border: solid red 3px;
+    color: blue;
+    font-weight: bold;
+}
+input[type="text"]:focus{ /*поле текста при вводе*/
+    text-transform: capitalize;}
 textarea {/*поле для обращения*/
     border: solid black 3px;
     font-size: 10px;
@@ -49,11 +64,18 @@ textarea {/*поле для обращения*/
     width: 298px;
     color: red;
     background-color: antiquewhite;
+    text-transform: capitalize;
+}
+textarea:focus{   /*поле обращения при вводе*/
+    text-transform: capitalize;
 }
 .switches { /*рамка картинок на страницах товаров*/
     height: 400px;
     width: 400px;
     outline: solid blue;
+}
+.switches:hover {
+    outline: none;
 }
 .button {/*кнопки*/
     color: blue;
@@ -62,3 +84,47 @@ textarea {/*поле для обращения*/
     width: 149px;
     border:solid black 0.2px;
 }
+.menu a:hover {    /*наведение на ссылку*/
+    color: green;
+}
+.header { /*головной блок*/
+    background-color: wheat;
+    }
+.footer {   /*блок футера*/
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    background-color: whitesmoke;
+    color: gold;
+    text-align: center;
+    }
+.body table { /*таблица*/
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.body td {    /*столбцы таблицы*/
+    border: 1px solid black;
+}
+.body caption {   /*обрамление заголовка таблицы таблицы*/
+    border: 1px solid black;
+    font-family: "Times New Roman";
+    color: blue;
+    height: 80px;
+    vertical-align: center;
+}
+.catalogitem p:first-letter { /*первая буква параграфов на странице товара*/
+    font-family: Arial;
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
