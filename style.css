@@ -1,19 +1,63 @@
-.menu a {      /*ссылки меню*/
-    color:red;
-    font-style: italic;
-    text-decoration:underline;
-    list-style-type: none;
-    font-size: 12px;
-}
+
 body {
     background-color: papayawhip;
+}
+.container {   /*контейнер сайта*/
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {  /*шапка*/
+    height: 100px;
+    background-color: wheat;
+}
+.footer { /*футер*/
+    width: 100%;
+    height: 100px;
+    background-color: seashell;
+    display: inline-table;
+    text-align: right;
+    }
+.logo { /*логотип магазина*/
+    background-image: url("images/114-94.png");
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    }
+.menu a { /*ссылки меню*/
+    color: red;
+    text-decoration: none;
+    font-style: italic;
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 25px;
+    float: left;
+}
+.menu {    /*меню*/
+    float: right;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+.menu a:hover {  /*ссылки меню при наведении*/
+    color: blue;
+    list-style-image:url("images/123-94.jpg");
+    }
+.footer h5 { /*текст внутри футера*/
+    margin-top: 20px;
+    margin-right: 40px;
+    color: cornflowerblue;
 }
 .descriptionh { /*заголовки на страницах товаров*/
     color: #000;
     font-size: 18px;
     font-weight: 400;
     background-color: #eaeaea;
-}
+    overflow: hidden;
+    }
 .shortdesc{/*стили для текста краткого описания*/
     color: #707070;
     font-size: 14px;
@@ -32,6 +76,10 @@ body {
     font-style: inherit;
     text-decoration: underline;
     list-style-image:url("images/123-94.jpg");
+    overflow: hidden;
+}
+input:focus {
+    outline:none;
 }
 input[type="text"]{ /*текстовые поля*/
     border: solid black 3px;
@@ -65,15 +113,20 @@ textarea {/*поле для обращения*/
     color: red;
     background-color: antiquewhite;
     text-transform: capitalize;
+    resize: none;
 }
 textarea:focus{   /*поле обращения при вводе*/
     text-transform: capitalize;
+    outline:none;
 }
 .switches { /*рамка картинок на страницах товаров*/
     height: 400px;
     width: 400px;
     outline: solid blue;
-}
+    float: left;
+    margin-right: 40px;
+    }
+
 .switches:hover {
     outline: none;
 }
@@ -84,28 +137,14 @@ textarea:focus{   /*поле обращения при вводе*/
     width: 149px;
     border:solid black 0.2px;
 }
-.menu a:hover {    /*наведение на ссылку*/
-    color: green;
-}
-.header { /*головной блок*/
-    background-color: wheat;
-    }
-.footer {   /*блок футера*/
-    height: 80px;
-    width: 100%;
-    bottom: 0;
-    background-color: whitesmoke;
-    color: gold;
-    text-align: center;
-    }
-.body table { /*таблица*/
+.main table { /*таблица*/
     border: 1px solid black;
     border-collapse: collapse;
 }
-.body td {    /*столбцы таблицы*/
+.main td {    /*столбцы таблицы*/
     border: 1px solid black;
 }
-.body caption {   /*обрамление заголовка таблицы таблицы*/
+.main caption {   /*обрамление заголовка таблицы таблицы*/
     border: 1px solid black;
     font-family: "Times New Roman";
     color: blue;
@@ -118,13 +157,26 @@ textarea:focus{   /*поле обращения при вводе*/
     text-decoration: underline;
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
+.buy {
+    height: 100px;
+    width: 300px;
+    font-size: 35px;
+    color: white;
+    background-color: gold;
+    float:right;
+    margin-right: 40px;
+    }
+.buy:hover {
+    color: wheat;
+    background-color: goldenrod;
+}
+.item {
+    float: left;
+    margin-right: 30px;
+    height: 400px;
+    width: 270px;
+}
+.item a {
+    text-decoration: none;
+    color: blue;
+}

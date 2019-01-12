@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <title>Pro-Market</title>
+    <title>Pro-market</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header">
-    <table>
-        <tr><td><img src="images/114-94.png" height="50px" width="50px"></td>
-            <td><ul class="menu">
-                <a href="index.html"><li>Главная</li></a>
-                <a href="katalog.html"><li>Каталог</li></a>
-                <a href="contacts.html"><li>Контакты</li></a>
-            </ul>
-            </td>
-        </tr>
-    </table>
+<div class="container">
+    <div class="header">
+        <div class="logo"></div>
+        <ul class="menu">
+            <a href="index.html"><li>Главная</li></a>
+            <a href="katalog.html"><li>Каталог</li></a>
+            <a href="contacts.html"><li>Контакты</li></a>
+        </ul>
+    </div>
+    <div class="main"><h1>Напишите нам!</h1>
+        <form>
+            Введите ваше имя <br>
+            <input type="text" placeholder="Ваше Имя"><br>
+            Введите вашу почту <br>
+            <input type="email" placeholder="Ваша почта"><br>
+            По какой теме вы к нам обращаетесь? <br>
+            <input type="text" placeholder="Тема обращения"><br>
+            Изложите суть обращения <br>
+            <textarea placeholder="Введите текст"></textarea><br>
+            <input class="button" type="submit" value="Сохранить">
+            <input class="button" type="reset" value="Очистить">
+        </form>
+        <h1>Адрес</h1>
+        <ul>
+            <li>+79817350446</li>
+            <li>г.Припять ул.Курчатова,27</li>
+            <li>pro-market@gmail.com</li>
+        </ul>
+    </div>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CBRZF4G0tA" height="374px" width="100%" frameborder="1"></iframe>
+    <div class="footer"><h5>&copy Все права защищены <br>Вячеслав Пономарев.2019</h5></div>
 </div>
-<h3>Напишите нам!</h3>
-<form>
-        Введите ваше имя <br>
-        <input type="text" placeholder="Ваше Имя"><br>
-        Введите вашу почту <br>
-        <input type="email" placeholder="Ваша почта"><br>
-        По какой теме вы к нам обращаетесь? <br>
-        <input type="text" placeholder="Тема обращения"><br>
-        Изложите суть обращения <br>
-        <textarea placeholder="Введите текст"></textarea><br>
-        <input class="button" type="submit" value="Сохранить">
-        <input class="button" type="reset" value="Очистить">
-</form>
-<h1>Адрес</h1>
-<ul>
-    <li>+79817350446</li>
-    <li>г.Припять ул.Курчатова,27</li>
-    <li>pro-market@gmail.com</li>
-</ul>
-<iframe src="https://yandex.ru/map-widget/v1/-/CBRZF4G0tA" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
-<div class="footer">
-    &copy Все права защищены
-</div>
+
 </body>
 </html>
